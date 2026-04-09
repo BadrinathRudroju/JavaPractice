@@ -5,7 +5,7 @@ public class SearchInStrings {
         System.out.println(searchString(name,target));
     }
     static boolean searchString(String name, char target){
-        if(name.length() == 0){
+        if(name.isEmpty()){
             return false;
         }
         for(int i = 0; i< name.length(); i++){
