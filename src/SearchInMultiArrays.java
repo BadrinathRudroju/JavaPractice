@@ -10,7 +10,8 @@ public class SearchInMultiArrays {
         };
         int target = 3;
         System.out.println("Target found at index: " + Arrays.toString(search(arr,target)));
-        System.out.println("Maximum of is: " + max(arr));
+        System.out.println("Maximum of array is: " + max(arr));
+        System.out.println("Minimum of array is:"  + min(arr));
     }
 
     static int[] search(int[][] arr, int target){
@@ -37,5 +38,17 @@ public class SearchInMultiArrays {
             }
         }
         return max;
+    }
+
+    static int min(int[][] arr){
+        int min = arr[0][0];
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr[i].length; j++){
+                if(min > arr[i][j]){
+                    return arr[i][j];
+                }
+            }
+        }
+        return min;
     }
 }
