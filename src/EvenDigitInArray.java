@@ -5,9 +5,9 @@ public class EvenDigitInArray {
     }
     static int findnumbers(int[] nums){
         int count=0;
-        for(int i=0; i< nums.length; i++){
-            if(even(nums[i])){
-            count++;
+        for (int num : nums) {
+            if (even(num)) {
+                count++;
             }
         }
         return count;
