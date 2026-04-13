@@ -1,6 +1,6 @@
 public class OrderAgnosticBS {
     public static void main(String[] args){
-        int[] arr = {-2,-1,0,6,7,8,76,99};
+        int[] arr = {-2,-1,0,6,7,8,76,99,987};
         int target = 2;
         System.out.println("Index at: " + search(arr,target));
     }
