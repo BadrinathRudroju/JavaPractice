@@ -1,3 +1,5 @@
+package Searching;
+
 public class SearchInStrings {
     public static void main(String[] args){
         String name = "Badri";
@@ -16,3 +18,4 @@ public class SearchInStrings {
         return false;
     }
 }
+

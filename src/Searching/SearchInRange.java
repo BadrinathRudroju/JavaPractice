@@ -1,12 +1,14 @@
+package Searching;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SearchInRange {
     public static void main(String[] args){
-       Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter size of array: ");
         int size = scanner.nextInt();
-       int[] arr = new int[size];
+        int[] arr = new int[size];
         System.out.println("Enter elements of array: ");
         try {
             for (int i = 0; i < size; i++) {
@@ -18,7 +20,7 @@ public class SearchInRange {
             return;
         }
         System.out.print("Element to found: ");
-       int target = scanner.nextInt();
+        int target = scanner.nextInt();
         System.out.println("Enter range: ");
         System.out.print("Start: ");
         int start = scanner.nextInt();
@@ -34,7 +36,7 @@ public class SearchInRange {
         }
         for(int i=start; i<= end; i++){
             if(arr[i] == target){
-            return "At index: " + i;
+                return "At index: " + i;
             }
         }
         return "Element not found";
