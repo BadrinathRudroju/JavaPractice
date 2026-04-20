@@ -1,7 +1,7 @@
 package CoreJava;
 
 public class IsArmstrong {
-    public static void main(String[] args){
+     static void main(String[] args){
         System.out.println(arm(153));
     }
     static boolean arm(int num){
