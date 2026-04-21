@@ -9,7 +9,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         boolean again = true;
 
-        while(again == true) {
+        while(again) {
 
             double a, b;
             System.out.print("Enter first number: ");
@@ -46,7 +46,7 @@ public class Calculator {
 
             System.out.println("do you want to continue:(true/false)");
             again = scanner.nextBoolean();
-            if(again == false){
+            if(!again){
                 System.out.println("okay! bye");
             }
 
