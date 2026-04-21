@@ -21,7 +21,7 @@ public class ispalindrome {
           System.out.println("Please enter valid option");
       }
   }
-public static boolean pal(String word){
+    public static boolean pal(String word){
      word = word.toLowerCase();
      for(int i=0; i<word.length()/2;i++){
          char start = word.charAt(i);
