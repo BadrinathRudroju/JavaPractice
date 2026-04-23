@@ -7,7 +7,7 @@ package Searching;
             int ans = search(arr,target);
             System.out.println(ans);
         }
-        //return index of array if found else return -1
+        //return index of array if target is found else return -1
         static int search(int[] arr, int target){
             int start =0;
             int end = arr.length -1;
