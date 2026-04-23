@@ -1,5 +1,8 @@
 package Searching;
 
+
+//it searches for the element irrespective of ascending or descending sorting of array
+
     public class OrderAgnosticBS {
         public static void main(String[] args){
             int[] arr = {-2,-1,0,6,7,8,76,99,987};
