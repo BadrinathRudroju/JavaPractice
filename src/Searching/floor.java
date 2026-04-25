@@ -5,7 +5,7 @@ package Searching;
 public class floor {
     public static void main(String[] args){
         int[] arr = {20,23,44,54,555,666};
-        int target = 5;
+        int target = 4;
         int ans = bs(arr,target);
         System.out.println(ans);
     }
@@ -13,6 +13,9 @@ public class floor {
         int start = 0;
         int end = arr.length;
 
+        if(target < arr[start]){
+            return -1;
+        }
         while(start <= end){
             int mid = start + (end - start) /2;
             if(target == arr[mid]){
