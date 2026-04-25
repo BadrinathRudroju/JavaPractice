@@ -7,7 +7,7 @@ package Searching;
 public class ceiling {
     static void main() {
         int[] arr = {1,23,44,54,555,666};
-        int target = 57;
+        int target = 5344;
         System.out.println(ceil(arr,target));
     }
 
@@ -24,7 +24,7 @@ public class ceiling {
             if(target == arr[mid]){
                 return mid;
             }else if(target > arr[mid]){
-                start = mid +1;
+                start = mid + 1;
             }else{
                 end = mid -1;
             }
